@@ -1,22 +1,43 @@
 # Quentin McKay & Matt Garrow - T3A2-A - Full Stack App (Part A)
 
 ## R1
-Description of your website, including:
-- Purpose
-- Functionality / features
-- Target audience
-- Tech stack
+### Purpose
+
+This app is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building.
+
+The current problem is that many buildings are managed in an informal way, with committee members messaging and emailing individually with little transparency, while the owners corporation management are unable to collate all the information about the building, as well as lacking their own communication and responsibility transparency. While there exists some forms of management software (such as Trello), these are unequiped for managing a building that needs to conform to state building management codes as well as maintaining building security. This app aims to tackle these issues.
+
+
+### Functionality & Features
+
+-- TODO --
+
+
+### Target Audience
+
+This is an enterprise-facing application. The application will be provided for internal use by a Owners Corporation Management company that can then allow access to building members. The target audience will be the owners corp management and the owners/occupants of a building, with many buildings being potentially managed with the application.
+
+### Tech Stack
+
+This is a MERN application:
+- MongoDB: This is the database.
+- ExpressJS: This is the server framework that manages the back-end of the application.
+- React: This is the front-end framework for building the client-facing views.
+- Node: This is the javascript runtime environment that creates the server that ExpressJS runs on.
+
 
 ## R2
 [Provides dataflow diagram(s) that strictly follow the standard convensions to clearly identify the processes within your application. Clearly depicts where data is coming from, where it is going and how it is being stored.]
 
 Dataflow Diagram
+-- TODO --
 
 
 ## R3
 [Shows almost flawless understanding of the high level structure of the app]
 
 Application Architecture Diagram
+-- TODO --
 
 ## R4
 [Provides multiple user stories that use ‘persona, what and why’ that outline meaningful features of project. Shows evidence of user story revision and refinement.]
@@ -48,11 +69,13 @@ The app will have 3 types of user:
 
 
 User Stories
+-- TODO --
 
 ## R5
 [Provides wireframes that show exceptional planning of project flow and structure including but not limited to space distribution, content prioritisation, intended actions, functions, relationships between screens.]
 
 Wireframes for multiple standard screen sizes, created using industry standard software
+-- TODO --
 
 ## R6
 [Simple and clear standards for planning methodology chosen and adhered to]
