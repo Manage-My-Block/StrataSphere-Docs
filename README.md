@@ -59,3 +59,18 @@ Wireframes for multiple standard screen sizes, created using industry standard s
 
 Screenshots of your Trello board throughout the duration of the project
 
+July 5:
+
+
+July 6:
+<p align="center">
+  <img src="./docs/trello_screenshots/July%206_1.png" />
+</p>
+
+<p align="center">
+  <img src="./docs/trello_screenshots/July%206_2.png" />
+</p>
+
+<p align="center">
+  <img src="./docs/trello_screenshots/July%206_3.png" />
+</p>
