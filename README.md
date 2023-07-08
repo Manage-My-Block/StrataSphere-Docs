@@ -1,9 +1,30 @@
 # Quentin McKay & Matt Garrow - T3A2-A - Full Stack App (Part A)
 
+## Authors
+
+Quentin McKay - [GitHub](https://github.com/quentin-mckay) | [Portfolio](https://www.quentinmckay.dev/) | [LinkedIn](https://www.linkedin.com/in/quentinmckaydev/)
+
+Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-garrow.netlify.app/) | [LinkedIn](https://www.linkedin.com/in/matt-garrow/)
+
+## Index
+
+- [Description](#description)
+- [Purpose](#purpose)
+- [Functionality/Features](#functionality--features)
+- [Target Audience](#target-audience)
+- [Tech Stack](#tech-stack)
+- [Dataflow Diagram](#dataflow-diagram)
+- [Application Architecture](#architecture-diagram)
+- [User Stories](#user-stories)
+- [Wireframes](#wireframes)
+- [Trello Board](#trello-board)
+
 ## R1 - APP DESCRIPTION
-### Purpose
+### Description
 
 This app is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building.
+
+### Purpose
 
 The current problem is that many buildings are managed in an informal way, with committee members messaging and emailing individually with little transparency, while the owners corporation management are unable to collate all the information about the building, as well as lacking their own communication and responsibility transparency. While there exists some forms of management software (such as Trello), these are unequiped for managing a building that needs to conform to state building management codes as well as maintaining building security. This app aims to tackle these issues.
 
@@ -36,7 +57,7 @@ This is a MERN application:
 
 ---
 
-## R2 - DATAFLOW DIAGRAM
+## R2 - DATAFLOW DIAGRAM <a id="dataflow-diagram"></a>
 [Provides dataflow diagram(s) that strictly follow the standard convensions to clearly identify the processes within your application. Clearly depicts where data is coming from, where it is going and how it is being stored.]
 
 Dataflow Diagram
@@ -44,7 +65,7 @@ Dataflow Diagram
 
 ---
 
-## R3 - APPLICATION ARCHITECTURE DIAGRAM
+## R3 - APPLICATION ARCHITECTURE DIAGRAM <a id="architecture-diagram"></a>
 [Shows almost flawless understanding of the high level structure of the app]
 
 Application Architecture Diagram
@@ -52,7 +73,7 @@ Application Architecture Diagram
 
 ---
 
-## R4 - USER STORIES
+## R4 - USER STORIES <a id="user-stories"></a>
 [Provides multiple user stories that use ‘persona, what and why’ that outline meaningful features of project. Shows evidence of user story revision and refinement.]
 
 The app will have 3 types of user:
@@ -104,7 +125,7 @@ The app will have 3 types of user:
 
 ---
 
-## R5 - WIREFRAMES
+## R5 - WIREFRAMES <a id="wireframes"></a>
 [Provides wireframes that show exceptional planning of project flow and structure including but not limited to space distribution, content prioritisation, intended actions, functions, relationships between screens.]
 
 Wireframes for multiple standard screen sizes, created using industry standard software
@@ -112,7 +133,7 @@ Wireframes for multiple standard screen sizes, created using industry standard s
 
 ---
 
-## R6 - PLANNING METHODOLOGY
+## R6 - PLANNING METHODOLOGY <a id="trello-board"></a>
 [Simple and clear standards for planning methodology chosen and adhered to]  
 
 Tasks are organised using [Trello](https://trello.com/b/L4fMRj3x/term-3-full-stack-project).
