@@ -92,11 +92,15 @@ The app will have 3 types of user:
 
 - "As an Owners Committee Member, I want to be able to cast votes on tickets, so that I can perform my task as a committee member and approve of any works that need to be done."
 
+### Building Member User Stories
 
+"As a building member, I want to be able to see information about committee members, managers, and other building managers, so that I have access to contact information and a clear understanding of who is involved in my community."
 
+"As a building member, I want to be able to see the contact information for building services, so that I know who to contact when necessary."
 
-User Stories
--- TODO --
+"As a building member, I want to be able to be able to create, update, and delete my posts on the notice board, so that I can contribute to notice board posts."
+
+"As a building member, I want to be able to see basic budget information, so that I understand the current state of the budget to provide context for the meetings."
 
 ---
 
