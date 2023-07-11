@@ -22,7 +22,7 @@ Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-
 ## R1 - APP DESCRIPTION
 ### Description
 
-MyBlock is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building - from official capital works to who is throwing the next BBQ or block party.
+StrataSphere is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building - from official capital works to who is throwing the next BBQ or block party.
 
 ### Purpose
 
@@ -87,7 +87,7 @@ The app will have 3 types of user:
 - #### **Owners Corporation Manager**
     This is an 'admin' role, they can CRUD users/tickets/notice board posts/meetings. They can also create data in the app such as adding contact information for services (plumber, elevator, electricians, etc), adding apartment numbers (to assign to users), approving the Owners Committee members, updating the budget balance. They can call votes, approve votes, and add minutes to meetings.
 
-    Owners Corporation Managers are people who are part of a company that manages buildings to comply with state and national housing laws. Most buildings have Owners Corporation Managers, however it is possible for smaller units to self-manage. Both kinds of manager can use the MyBlock app.
+    Owners Corporation Managers are people who are part of a company that manages buildings to comply with state and national housing laws. Most buildings have Owners Corporation Managers, however it is possible for smaller units to self-manage. Both kinds of manager can use the StrataSphere app.
 
 - #### **Owners Committee Members**
   Owners Committee Members have all the abilities of a standard *Building Member* but can also cast votes when the Owners Corporation Manager calls a vote and CRUD tickets/notice board posts.
@@ -97,7 +97,7 @@ The app will have 3 types of user:
 - #### **Building Member**
   This is the standard role in the app. They can CRUD their own notice board posts and comment on posts. They can only read information about committee members, the owners corporation manager, other building members, services contact info, and tickets. They cannot create tickets, that needs to be done by a Owners Committee Member. All Building Member abilities are shared with Owners Committee Members.
 
-  Building members can be owners or occupants of apartments in the building. While similar building management apps restrict users to owners only, MyBlock allows for a more open environment where renters and other occupants can participate in the building management. However, because this type of user may not be legally entitled to make decisions MyBlock restricts the role to only the notice board and viewing data for contacts and other users.
+  Building members can be owners or occupants of apartments in the building. While similar building management apps restrict users to owners only, StrataSphere allows for a more open environment where renters and other occupants can participate in the building management. However, because this type of user may not be legally entitled to make decisions StrataSphere restricts the role to only the notice board and viewing data for contacts and other users.
 
 
 #### Owners Corporation Manager User Stories
