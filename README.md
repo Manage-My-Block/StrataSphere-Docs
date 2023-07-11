@@ -6,6 +6,13 @@ Quentin McKay - [GitHub](https://github.com/quentin-mckay) | [Portfolio](https:/
 
 Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-garrow.netlify.app/) | [LinkedIn](https://www.linkedin.com/in/matt-garrow/)
 
+## Project links
+
+- [Github repo](https://github.com/Manage-My-Block/StrataSphere-Docs)
+- [Project presentation]()
+- [Trello board](https://trello.com/b/L4fMRj3x/term-3-full-stack-project)
+
+
 ## Index
 
 - [Description](#description)
@@ -17,7 +24,7 @@ Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-
 - [Application Architecture](#architecture-diagram)
 - [User Stories](#user-stories)
 - [Wireframes](#wireframes)
-- [Trello Board](#trello-board)
+- [Planning methodology](#trello-board)
 
 ## R1 - APP DESCRIPTION
 ### Description
@@ -141,8 +148,25 @@ The app will have 3 types of user:
 
 - "As a building member, I want to be able to see basic budget information, so that I understand the current state of the budget to provide context for the meetings."
 
+### User Story first refinement
 
-### User Story refinement
+We added some additional admin abilities to the Committee persona as we felt like they should have similar abilities. The only thing that a committee member can't do is CRUD other users
+
+#### Owners Committee Member User Stories
+
+| **I want to...**              | **So I can...**                                                                                       | **Related Feature**                                       |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| CRUD a ticket                 | inform the owners corporation management of repairs/problems                                          | Create a Ticket if committee member                       |
+| Comment on Tickets            | provide additional information for other committee members and owners corp management                 | Ticket commenting if committee member                     |
+| Vote on a Ticket              | perform my duty as a committee member and approve of any works                                        | Cast a vote on a Ticket if committee member               |
+| CRUD the Notice board         | keep the notices organised and remove unwanted posts, as well as talk about goings-on in the building | CRUD any notices/comments if committee member             |
+| Change the status of a Ticket | Start or close a ticket if the work is complete                                                       | Set status and set complete on Ticket if committee member |
+| Add a cost to a ticket        | To show how much something cost                                                                       | Set Ticket cost and update Budget if committee member     |
+| CRUD a Meeting                | provide feedback to the committee and call an AGM                                                     | CRUD Meetings if committee member                         |
+| Call a vote on a Ticket       | Confirm the committee members approve the action required                                             | Call a vote on Ticket if committee member                 |
+
+
+### User Story final refinement
 
 We have taken the user stories and combined them with specific features. We have also streamlined some of the stories so we have a clearer understanding of how features and UX will interact.
 
@@ -160,12 +184,16 @@ We have taken the user stories and combined them with specific features. We have
 
 #### Owners Committee Member User Stories
 
-| **I want to...**      | **So I can...**                                                                                       | **Related Feature**                           |
-| --------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| CRUD a ticket         | inform the owners corporation management of repairs/problems                                          | Create a Ticket if committee member           |
-| Comment on Tickets    | provide additional information for other committee members and owners corp management                 | Ticket commenting if committee member         |
-| Vote on a Ticket      | perform my duty as a committee member and approve of any works                                        | Cast a vote on a Ticket if committee member   |
-| CRUD the Notice board | keep the notices organised and remove unwanted posts, as well as talk about goings-on in the building | CRUD any notices/comments if committee member |
+| **I want to...**              | **So I can...**                                                                                       | **Related Feature**                                       |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| CRUD a ticket                 | inform the owners corporation management of repairs/problems                                          | Create a Ticket if committee member                       |
+| Comment on Tickets            | provide additional information for other committee members and owners corp management                 | Ticket commenting if committee member                     |
+| Vote on a Ticket              | perform my duty as a committee member and approve of any works                                        | Cast a vote on a Ticket if committee member               |
+| CRUD the Notice board         | keep the notices organised and remove unwanted posts, as well as talk about goings-on in the building | CRUD any notices/comments if committee member             |
+| Change the status of a Ticket | Start or close a ticket if the work is complete                                                       | Set status and set complete on Ticket if committee member |
+| Add a cost to a ticket        | To show how much something cost                                                                       | Set Ticket cost and update Budget if committee member     |
+| CRUD a Meeting                | provide feedback to the committee and call an AGM                                                     | CRUD Meetings if committee member                         |
+| Call a vote on a Ticket       | Confirm the committee members approve the action required                                             | Call a vote on Ticket if committee member                 |
 
 #### Building Member User Stories
 
@@ -258,4 +286,30 @@ Matt completes his tasks and begins finalising the README document for submissio
 
 <p align="center">
   <img src="./docs/trello_screenshots/July%2011_2.png" />
+</p>
+
+### July 12
+
+Matt does a review of the User Stories. There was discussion about the level of authorisation given to Committee Member users - the outcome being that they should have the same abilities as an admin but without User CRUD.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/July 12_1.png" />
+</p>
+
+Wrapping up the last bits of the project. Matt takes on the task of ensuring the readme document is complete and correct.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/July 12_2.png" />
+</p>
+
+A new item is added to the current sprint - video presentation work.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/July 12_3.png" />
+</p>
+
+The final piece of the project: getting it ready for submission.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/July 12_4.png" />
 </p>
