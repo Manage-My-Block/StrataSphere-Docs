@@ -29,7 +29,7 @@ Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-
 ## R1 - APP DESCRIPTION
 ### Description
 
-StrataSphere is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building - from official capital works to who is throwing the next BBQ or block party.
+**_StrataSphere_** is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building - from official capital works to who is throwing the next BBQ or block party.
 
 ### Purpose
 
