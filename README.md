@@ -258,10 +258,9 @@ Rubric items were also added to the Trello so we can track how the assignment is
   <img src="./docs/trello_screenshots/rubric-items.png" />
 </p>
 
-
-### July 5:
-
 ### July 6:
+Trello setup and first tasks assigned to Matt and Quentin. Because we hadn't started yet we didn't have a good idea of how long items would take, so for the first sprint we kept the estimates open and then refined them as we continued working.
+
 <p align="center">
   <img src="./docs/trello_screenshots/July%206_1.png" />
 </p>
