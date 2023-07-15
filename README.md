@@ -258,10 +258,10 @@ Rubric items were also added to the Trello so we can track how the assignment is
   <img src="./docs/trello_screenshots/rubric-items.png" />
 </p>
 
-
-### July 5:
-
 ### July 6:
+
+Trello setup and first task assignment. Because we were still new to the project we didn't have accurate estimates on how long each item would take, so we kept the due date and task broad so we could refine it in the next sprint.
+
 <p align="center">
   <img src="./docs/trello_screenshots/July%206_1.png" />
 </p>
