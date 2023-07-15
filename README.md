@@ -29,7 +29,7 @@ Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-
 ## R1 - APP DESCRIPTION
 ### Description
 
-StrataSphere is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building - from official capital works to who is throwing the next BBQ or block party.
+**_StrataSphere_** is a building management tool that allows Owners Corporation Managers, Owners Committee Members, and Building Members to stay on top of everything happening in their building - from official capital works to who is throwing the next BBQ or block party.
 
 ### Purpose
 
@@ -259,7 +259,8 @@ Rubric items were also added to the Trello so we can track how the assignment is
 </p>
 
 ### July 6:
-Trello setup and first tasks assigned to Matt and Quentin. Because we hadn't started yet we didn't have a good idea of how long items would take, so for the first sprint we kept the estimates open and then refined them as we continued working.
+
+Trello setup and first task assignment. Because we were still new to the project we didn't have accurate estimates on how long each item would take, so we kept the due date and task broad so we could refine it in the next sprint.
 
 <p align="center">
   <img src="./docs/trello_screenshots/July%206_1.png" />
