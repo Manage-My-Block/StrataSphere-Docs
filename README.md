@@ -8,23 +8,33 @@ Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-
 
 ## Project links
 
-- [Github repo](https://github.com/Manage-My-Block/StrataSphere-Docs)
-- [Project presentation]()
+- [Production site](https://stratasphere.netlify.app/)
+- [Back-end repo](https://github.com/Manage-My-Block/api)
+- [Front-end repo](https://github.com/Manage-My-Block/client)
+- [Docs repo](https://github.com/Manage-My-Block/StrataSphere-Docs)
 - [Trello board](https://trello.com/b/L4fMRj3x/term-3-full-stack-project)
 
 
 ## Index
 
-- [Description](#description)
-- [Purpose](#purpose)
-- [Functionality/Features](#functionality--features)
-- [Target Audience](#target-audience)
-- [Tech Stack](#tech-stack)
-- [Dataflow Diagram](#dataflow-diagram)
-- [Application Architecture](#architecture-diagram)
-- [User Stories](#user-stories)
-- [Wireframes](#wireframes)
-- [Planning methodology](#trello-board)
+- Part A
+  - [Description](#description)
+  - [Purpose](#purpose)
+  - [Functionality/Features](#functionality--features)
+  - [Target Audience](#target-audience)
+  - [Tech Stack](#tech-stack)
+  - [Dataflow Diagram](#dataflow-diagram)
+  - [Application Architecture](#architecture-diagram)
+  - [User Stories](#user-stories)
+  - [Wireframes](#wireframes)
+  - [Planning methodology](#trello-board)
+  
+- Part B
+  - [Planning methodology](#description)
+  - [Testing](#user-testing-b)
+    - [Development testing](#dev-testing-b)
+    - [Production testing](#production-testing-b)
+
 
 ## R1 - APP DESCRIPTION
 ### Description
@@ -342,9 +352,11 @@ The final piece of the project: getting it ready for submission.
 </p>
 
 
+--- 
+
 # Part B
 
-## R4 - PROJECT MANAGEMENT METHODOLOGY
+## R4 - PROJECT MANAGEMENT METHODOLOGY <a id="trello-board-b"></a>
 
 We continued to use the Trello board from Part A in this assignment, along with the methodology of sprints, kanban, and time estimates.
 
@@ -382,19 +394,18 @@ After creating the basic MVC design pattern, we started to work on authenticatio
 
 ### July 23
 
-After the back-end was mostly complete we started work on the testing campaign. Here we split test-writing between Matt and Quentin.
+After the back-end was mostly complete we started work on the testing campaign. Here most of the test-writing for the back end was written by Matt as he had a good understanding of the architecture.
 
 <p align="center">
   <img src="./docs/part_b/trello/July 23_2.png" />
 </p>
 
-### July 26
 
 
 
-## R8 - USER TESTING
+## R8 - USER TESTING <a id="user-testing-b"></a>
 
-### Development testing
+### Development testing <a id="dev-testing-b"></a>
 
 We used the `jest` test library, along with `supertest`, and end-to-end user testing to create tests for the application. 
 
@@ -457,7 +468,7 @@ Jest provided us with a coverage report. While we were unable to complete a full
 We allowed for the gaps because many of the backend routes are identically to each other, featuring standardise CRUD code throughout the codebase. So be extensively testing the major routes we could be confident the others would work too.
 
 
-### Production testing
+### Production testing <a id="production-testing-b"></a>
 
 In production we moved from a unit-testing framework into an end-to-end methodology. This means we started to integrate the User Stories into our testing, building tests paired many features together to give us an understanding of how our application would be used in the real world. We ended up merging some of the Stories to streamline the testing and to also display a more natural usage of the app. For clarity, here we changed the `ticket` terminology from Part A to `task`, which is what we called a ticket/todo in the front-end. We settled on these User Stories to base our testings:
 
