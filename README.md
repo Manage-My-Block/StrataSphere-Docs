@@ -200,6 +200,9 @@ We have taken the user stories and combined them with specific features. We have
 | View contact and building member data | know who to contact in an emergency or to discuss issues | View all contacts and users     |
 | View budget data                      | understand how my body corp fees are being spent         | View budget and transactions    |
 
+### PART B USER STORIES REVISION
+
+During the course of coding Part B we realised that having multiple roles would limit the usability for first time users, restricting access and preventing features from being used. As a way to make the app more accessible and engaging for all users we merged the three role types into a single role, which has all the permissions available in the app. While this doesn't impact the user stories it does change the way we coded up the features.
 
 ---
 
@@ -337,3 +340,150 @@ The final piece of the project: getting it ready for submission.
 <p align="center">
   <img src="./docs/trello_screenshots/July 12_4.png" />
 </p>
+
+
+# Part B
+
+## R4 - PROJECT MANAGEMENT METHODOLOGY
+
+We continued to use the Trello board from Part A in this assignment, along with the methodology of sprints, kanban, and time estimates.
+
+We generally tried to split the work evenly, though Matt had a preference for back-end work and Quentin for the front-end. Thus we allocated tasks according to each team member's ability. Matt did most of the back-end design, models and testing, while Quentin did most of the UI/UX and querying logic on the front-end. This was a good use of resources as we were able to get a MVP finished within a week.
+
+### July 20
+
+We started the project by describing the project requirements.
+
+<p align="center">
+  <img src="./docs/part_b/trello/July 20_1.png" />
+</p>
+
+Then we organised our first sprint - creating the back-end architecture. As mentioned, Matt took on much of the initial model design work.
+
+<p align="center">
+  <img src="./docs/part_b/trello/July 20_3.png" />
+</p>
+
+<p align="center">
+  <img src="./docs/part_b/trello/July 20_4.png" />
+</p>
+
+### July 22
+
+After creating the basic MVC design pattern, we started to work on authentication and data validation.
+
+<p align="center">
+  <img src="./docs/part_b/trello/July 22_2.png" />
+</p>
+
+<p align="center">
+  <img src="./docs/part_b/trello/July 22_3.png" />
+</p>
+
+### July 23
+
+After the back-end was mostly complete we started work on the testing campaign. Here we split test-writing between Matt and Quentin.
+
+<p align="center">
+  <img src="./docs/part_b/trello/July 23_2.png" />
+</p>
+
+### July 26
+
+
+
+## R8 - USER TESTING
+
+### Development testing
+
+We used the `jest` test library, along with `supertest`, and end-to-end user testing to create tests for the application. 
+
+Matt wrote the back-end tests primarily with jest and supplemented with manual API tests. For the manual testing we used the `Thunderclient` VS Code plugin, which is similar to Postman but can run entirely in VS Code.
+
+Here we created an testing environment file to track variables:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_1.png" />
+</p>
+
+Registering a user:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_2.png" />
+</p>
+
+Creating a new building and building manager:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_5.png" />
+</p>
+
+The various route tests for each controller:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_4.png" />
+</p>
+
+Along with the Thundeclient we also made automated jest tests. Here is part of the test for the Todos route:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-1.png" />
+</p>
+
+Here is the list of test files:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-2.png" />
+</p>
+
+Results of the test campaign:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-results_1.png" />
+</p>
+
+Detailed details of tests:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-results_2.png" />
+</p>
+
+Jest provided us with a coverage report. While we were unable to complete a full test suite for every route, especially the later routes like `/meetings` and the unused `/budgets` feature, we did extensive testing on the core feature routes, with many achieving 100% function coverage.
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-coverage.png" />
+</p>
+
+We allowed for the gaps because many of the backend routes are identically to each other, featuring standardise CRUD code throughout the codebase. So be extensively testing the major routes we could be confident the others would work too.
+
+
+### Production testing
+
+In production we moved from a unit-testing framework into an end-to-end methodology. This means we started to integrate the User Stories into our testing, building tests paired many features together to give us an understanding of how our application would be used in the real world. We ended up merging some of the Stories to streamline the testing and to also display a more natural usage of the app. For clarity, here we changed the `ticket` terminology from Part A to `task`, which is what we called a ticket/todo in the front-end. We settled on these User Stories to base our testings:
+
+| **I want to...**                                        | **So I can...**                                                                                                           | **Related Feature** | **Test**                                                                                                                                 |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Register to use the app                                 | Use the app.                                                                                                              | User creation       | Create a new user, assign the user a building                                                                                            |
+| Login in to the app                                     | Access my saved info and manage my building                                                                               | Authentication      | Using previously registered info, log in to the app                                                                                      |
+| Log out of the app                                      | Leave the application so it is secure and no-one else can access it                                                       | Authentication      | Using previously registered info, log in to the app, click 'logout' button to delete JWT from cookie                                     |
+| Create a task and write a comment on it                 | Tnform the owners corporation management of repairs/problems                                                              | Task CRUD           | User login, navigate to `Tasks`, use task creation form, submit form, access new task and submit a comment                               |
+| Call a vote on a task, submit ballot and close a task   | Confirm the committee members approve the action required and can complete a task                                         | Task CRUD           | Navigate to `Tasks`, open previously created task, click `call vote` button, then cast a vote                                            |
+| Drag and drop a task from `Pending` to `Active`         | Move a task into an active status, to tell building members it is being worked on                                         | Task CRUD           | Navigate to `Tasks`, open previously created task, drag and drop task from pending to active droppable space                             |
+| Edit a task and delete it                               | Update the info in the task, such as the deadline or other info, and completely remove a task from the history            | Task CRUD           | Navigate to `Tasks`, open previously created task, click `edit` button, change due date, submit edit, then delete task                   |
+| Create a notice with an image and write a comment on it | Start a discussion on the building noticeboard where all users can engage, provide a picture to add context to the notice | Notice CRUD         | Navigate to `Notices`, use notice creation form, upload image, submit form, access new notice and submit a comment                       |
+| Edit a notice and delete it                             | Change information on the notice, or remove a notice so the noticeboard can remain clear                                  | Notice CRUD         | Navigate to `Notices`, open previously created notice, click `edit` button, change the description, submit edit, then delete notice      |
+| Create a meeting and delete it                          | Distribute meeting links and to show the next meeting on the calendar                                                     | Meeting CRUD        | Navigate to `Meetings`, use meeting creation form, add a Zoom link and choose a date, submit form, click delete button to delete meeting |
+| Create a contact and delete it                          | Provide helpful contact info for people who can help around building (eg: plumbers, cleaners, etc)                        | Contact CRUD        | Navigate to `Contacts`, use contact creation form, submit form, click delete button to delete contact                                    |
+| Edit building info (can't delete building)              | Keep all building information up to date.                                                                                 | Building Update     | Navigate to `Building`, use building update form, change address, submit form, confirm update                                            |
+
+
+And here are the results of the tests:
+
+<p align="center">
+  <img src="./docs/part_b/testing/end-to-end-testing.png" />
+</p>
+
+On top of end-to-end tests we also conducted some unit-tests to make sure the components were operating as expected:
+
+
+
