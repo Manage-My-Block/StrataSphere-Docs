@@ -355,17 +355,17 @@ We generally tried to split the work evenly, though Matt had a preference for ba
 We started the project by describing the project requirements.
 
 <p align="center">
-  <img src="./docs/trello_screenshots/Part B/July 20_1.png" />
+  <img src="./docs/part_b/trello/July 20_1.png" />
 </p>
 
 Then we organised our first sprint - creating the back-end architecture. As mentioned, Matt took on much of the initial model design work.
 
 <p align="center">
-  <img src="./docs/trello_screenshots/Part B/July 20_3.png" />
+  <img src="./docs/part_b/trello/July 20_3.png" />
 </p>
 
 <p align="center">
-  <img src="./docs/trello_screenshots/Part B/July 20_4.png" />
+  <img src="./docs/part_b/trello/July 20_4.png" />
 </p>
 
 ### July 22
@@ -373,11 +373,11 @@ Then we organised our first sprint - creating the back-end architecture. As ment
 After creating the basic MVC design pattern, we started to work on authentication and data validation.
 
 <p align="center">
-  <img src="./docs/trello_screenshots/Part B/July 22_2.png" />
+  <img src="./docs/part_b/trello/July 22_2.png" />
 </p>
 
 <p align="center">
-  <img src="./docs/trello_screenshots/Part B/July 22_3.png" />
+  <img src="./docs/part_b/trello/July 22_3.png" />
 </p>
 
 ### July 23
@@ -385,7 +385,7 @@ After creating the basic MVC design pattern, we started to work on authenticatio
 After the back-end was mostly complete we started work on the testing campaign. Here we split test-writing between Matt and Quentin.
 
 <p align="center">
-  <img src="./docs/trello_screenshots/Part B/July 23_2.png" />
+  <img src="./docs/part_b/trello/July 23_2.png" />
 </p>
 
 ### July 26
@@ -393,3 +393,99 @@ After the back-end was mostly complete we started work on the testing campaign. 
 
 
 ## R8 - USER TESTING
+
+### Development testing
+
+We used the `jest` test library, along with `supertest`, and end-to-end user testing to create tests for the application. 
+
+Matt wrote the back-end tests primarily with jest and supplemented with manual API tests. For the manual testing we used the `Thunderclient` VS Code plugin, which is similar to Postman but can run entirely in VS Code.
+
+Here we created an testing environment file to track variables:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_1.png" />
+</p>
+
+Registering a user:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_2.png" />
+</p>
+
+Creating a new building and building manager:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_5.png" />
+</p>
+
+The various route tests for each controller:
+
+<p align="center">
+  <img src="./docs/part_b/testing/thunderclient_4.png" />
+</p>
+
+Along with the Thundeclient we also made automated jest tests. Here is part of the test for the Todos route:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-1.png" />
+</p>
+
+Here is the list of test files:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-2.png" />
+</p>
+
+Results of the test campaign:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-results_1.png" />
+</p>
+
+Detailed details of tests:
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-results_2.png" />
+</p>
+
+Jest provided us with a coverage report. While we were unable to complete a full test suite for every route, especially the later routes like `/meetings` and the unused `/budgets` feature, we did extensive testing on the core feature routes, with many achieving 100% function coverage.
+
+<p align="center">
+  <img src="./docs/part_b/testing/back-end-jest-coverage.png" />
+</p>
+
+We allowed for the gaps because many of the backend routes are identically to each other, featuring standardise CRUD code throughout the codebase. So be extensively testing the major routes we could be confident the others would work too.
+
+
+### Production testing
+
+In production we moved from a unit-testing framework into an end-to-end methodology. This means we started to integrate the User Stories into our testing, building tests paired many features together to give us an understanding of how our application would be used in the real world. We ended up merging some of the Stories to streamline the testing and to also display a more natural usage of the app. For clarity, here we changed the `ticket` terminology from Part A to `task`, which is what we called a ticket/todo in the front-end. We settled on these User Stories to base our testings:
+
+
+| **I want to...**                                      | **So I can...**                                                                   | **Related Feature** | **Test**                                                                                                       |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Register to use the app                               | Use the app.                                                                      | User creation       | Create a new user, assign the user a building                                                                  |
+| Login in to the app                                   | Access my saved info and manage my building                                       | Authentication      | Using previously registered info, log in to the app                                                            |
+| Create a task and write a comment on it               | inform the owners corporation management of repairs/problems                      | Task CRUD           | User login, navigate to `TaskBoard`, use task creation form, submit form, access new task and submit a comment |
+| Call a vote on a task, submit ballot and close a task | Confirm the committee members approve the action required and can complete a task | Task CRUD           | Navigate to `TaskBoard`, open previously created task, click `call vote` button, then cast a vote              |
+| Drag and drop a task from `Pending` to `Active`       | Confirm the committee members approve the action required and can complete a task | Task CRUD           | Navigate to `TaskBoard`, open previously created task, click `call vote` button, then cast a vote              |
+
+
+
+| Comment on Tickets                        | Provide feedback on the work taken                                                                    | Ticket commenting                                         |                                                     |
+| Change the status of a Ticket             | Start or close a ticket if the work is complete                                                       | Set status and set complete on Ticket if admin            |                                                     |
+| Add a cost to a ticket                    | To show how much something cost                                                                       | Set Ticket cost and update Budget if admin                |                                                     |
+| Approve committee memebers                | update the roster after each Annual General Meeting                                                   | CRUD users if admin                                       |                                                     |
+| CRUD the Notice board                     | keep the notices organised and remove unwanted posts                                                  | CRUD any notices/comments if admin                        |                                                     |
+| CRUD a Meeting                            | provide feedback to the committee and call an AGM                                                     | CRUD Meetings if admin                                    |                                                     |
+| CRUD a ticket                             | inform the owners corporation management of repairs/problems                                          | Create a Ticket if committee member                       |
+| Comment on Tickets                        | provide additional information for other committee members and owners corp management                 | Ticket commenting if committee member                     |
+| Vote on a Ticket                          | perform my duty as a committee member and approve of any works                                        | Cast a vote on a Ticket if committee member               |
+| CRUD the Notice board                     | keep the notices organised and remove unwanted posts, as well as talk about goings-on in the building | CRUD any notices/comments if committee member             |
+| Change the status of a Ticket             | Start or close a ticket if the work is complete                                                       | Set status and set complete on Ticket if committee member |
+| Add a cost to a ticket                    | To show how much something cost                                                                       | Set Ticket cost and update Budget if committee member     |
+| CRUD a Meeting                            | provide feedback to the committee and call an AGM                                                     | CRUD Meetings if committee member                         |
+| Call a vote on a Ticket                   | Confirm the committee members approve the action required                                             | Call a vote on Ticket if committee member                 |
+| CRUD the Notice board                     | talk about goings-on in the building                                                                  | CRUD their own notices/comments                           |
+| View contact and building member data     | know who to contact in an emergency or to discuss issues                                              | View all contacts and users                               |
+| View budget data                          | understand how my body corp fees are being spent                                                      | View budget and transactions                              |
