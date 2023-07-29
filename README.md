@@ -200,6 +200,9 @@ We have taken the user stories and combined them with specific features. We have
 | View contact and building member data | know who to contact in an emergency or to discuss issues | View all contacts and users     |
 | View budget data                      | understand how my body corp fees are being spent         | View budget and transactions    |
 
+### PART B USER STORIES REVISION
+
+During the course of coding Part B we realised that having multiple roles would limit the usability for first time users, restricting access and preventing features from being used. As a way to make the app more accessible and engaging for all users we merged the three role types into a single role, which has all the permissions available in the app. While this doesn't impact the user stories it does change the way we coded up the features.
 
 ---
 
@@ -337,3 +340,56 @@ The final piece of the project: getting it ready for submission.
 <p align="center">
   <img src="./docs/trello_screenshots/July 12_4.png" />
 </p>
+
+
+# Part B
+
+## R4 - PROJECT MANAGEMENT METHODOLOGY
+
+We continued to use the Trello board from Part A in this assignment, along with the methodology of sprints, kanban, and time estimates.
+
+We generally tried to split the work evenly, though Matt had a preference for back-end work and Quentin for the front-end. Thus we allocated tasks according to each team member's ability. Matt did most of the back-end design, models and testing, while Quentin did most of the UI/UX and querying logic on the front-end. This was a good use of resources as we were able to get a MVP finished within a week.
+
+### July 20
+
+We started the project by describing the project requirements.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/Part B/July 20_1.png" />
+</p>
+
+Then we organised our first sprint - creating the back-end architecture. As mentioned, Matt took on much of the initial model design work.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/Part B/July 20_3.png" />
+</p>
+
+<p align="center">
+  <img src="./docs/trello_screenshots/Part B/July 20_4.png" />
+</p>
+
+### July 22
+
+After creating the basic MVC design pattern, we started to work on authentication and data validation.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/Part B/July 22_2.png" />
+</p>
+
+<p align="center">
+  <img src="./docs/trello_screenshots/Part B/July 22_3.png" />
+</p>
+
+### July 23
+
+After the back-end was mostly complete we started work on the testing campaign. Here we split test-writing between Matt and Quentin.
+
+<p align="center">
+  <img src="./docs/trello_screenshots/Part B/July 23_2.png" />
+</p>
+
+### July 26
+
+
+
+## R8 - USER TESTING
