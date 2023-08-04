@@ -400,7 +400,15 @@ After the back-end was mostly complete we started work on the testing campaign. 
   <img src="./docs/part_b/trello/July 23_2.png" />
 </p>
 
+### July 24+
 
+Moving to the front-end development we switched to a video and meet based system where we did a standup meeting once every 2 days to discuss the ongoing issues and what we are working on, using Trello primarily to track small component changes rather than features or architecture work.
+
+<p align="center">
+  <img src="./docs/part_b/trello/July 30.png" />
+</p>
+
+---
 
 
 ## R8 - USER TESTING <a id="user-testing-b"></a>
@@ -449,20 +457,14 @@ Here is the list of test files:
 
 Results of the test campaign:
 
-<p align="center">
-  <img src="./docs/part_b/testing/back-end-jest-results_1.png" />
-</p>
-
-Detailed details of tests:
-
-<p align="center">
-  <img src="./docs/part_b/testing/back-end-jest-results_2.png" />
+<p align="center" >
+  <img src="./docs/part_b/testing/back-end-jest-results_3.png" />
 </p>
 
 Jest provided us with a coverage report. While we were unable to complete a full test suite for every route, especially the later routes like `/meetings` and the unused `/budgets` feature, we did extensive testing on the core feature routes, with many achieving 100% function coverage.
 
 <p align="center">
-  <img src="./docs/part_b/testing/back-end-jest-coverage.png" />
+  <img src="./docs/part_b/testing/back-end-jest-coverage_2.png" />
 </p>
 
 We allowed for the gaps because many of the backend routes are identically to each other, featuring standardise CRUD code throughout the codebase. So be extensively testing the major routes we could be confident the others would work too.
@@ -496,5 +498,6 @@ And here are the results of the tests:
 
 On top of end-to-end tests we also conducted some unit-tests to make sure the components were operating as expected:
 
-
-
+<p align="center">
+  <img src="./docs/part_b/testing/front-end-jest-results_1.png" />
+</p>
