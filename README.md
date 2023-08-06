@@ -21,6 +21,29 @@ Matt Garrow - [GitHub](https://github.com/mjkgarrow) | [Portfolio](https://matt-
 - [Docs repo](https://github.com/Manage-My-Block/StrataSphere-Docs)
 - [Trello board](https://trello.com/b/L4fMRj3x/term-3-full-stack-project)
 
+## Usage
+
+First install all dependencies:
+
+```
+cd src/api
+npm install
+cd ../..
+cd src/client
+npm install
+```
+
+To run a local instance of the server and database - make sure you have MongoDB installed:
+
+```
+npm run local
+```
+
+Finally run a local instance of the client:
+
+```
+npm run dev
+```
 
 ## Index
 
