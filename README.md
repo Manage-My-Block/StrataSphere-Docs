@@ -2,9 +2,9 @@
 
 # StrataSphere
 
-<p align="center" style='display:flex; gap: 10px'>
-  <img src="./docs/part_b/client_pics/Screenshot%20Capture%20-%202023-08-04%20-%2013-55-32.png" style='border-radius: 10px; width: 50%'/>
-  <img src="./docs/part_b/client_pics/Screenshot%20Capture%20-%202023-08-04%20-%2013-59-26.png" style='border-radius: 10px; width: 50%'/>
+<p align="center" style=''>
+  <img src="./docs/part_b/client_pics/Screenshot%20Capture%20-%202023-08-04%20-%2013-55-32.png" style='border-radius: 10px;'/>
+  <img src="./docs/part_b/client_pics/Screenshot%20Capture%20-%202023-08-04%20-%2013-59-26.png" style='border-radius: 10px;'/>
 </p>
 
 ## Authors
